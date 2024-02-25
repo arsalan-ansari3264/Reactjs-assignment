@@ -1,0 +1,176 @@
+@import "../../css-config/mixins.scss";
+
+.card-container {
+  height: 255px;
+  max-width: 1024px;
+
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  position: relative;
+  padding: 20px;
+  @include sm {
+    width: 93%;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .left-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 30px;
+    text-transform: capitalize;
+    font-size: 13px;
+    @include sm {
+      padding-top: 50px;
+      padding-left: 0px;
+    }
+  }
+  .middle-card {
+    max-width: 490px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    padding-left: 30px;
+    @include sm {
+      margin-top: 30px;
+      padding-left: 10px;
+    }
+    span:first-child {
+      font-weight: 700;
+    }
+
+    h3 {
+      font-weight: 700;
+      margin-bottom: 10px;
+      font-size: 16px;
+      .highlight-desc {
+        padding-left: 20px;
+      }
+    }
+    .middle-lower-card {
+      color: #1b88f4;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      span {
+        padding-top: 5px;
+      }
+    }
+    .high {
+      height: 116px;
+      width: 505px;
+      background-color: #fff4ed;
+      border-radius: 12px;
+      padding-left: 10px;
+      padding-top: 10px;
+      @include sm {
+        width: 100%;
+      }
+      @include lg {
+        max-width: 360px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      .hlt span {
+        background-color: white;
+        margin-right: 20px;
+        font-size: 16px;
+        padding: 5px;
+        color: #1b88f4;
+        font-weight: 400;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .right-card {
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #074786;
+    border-radius: 5px;
+    @include sm {
+      flex-direction: row;
+      padding-left: 30px;
+      gap: 30px;
+    }
+    .right-upper-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #f3f9ff;
+      font-weight: 400;
+      padding: 20px 30px;
+      gap: 9px;
+      @include sm {
+        padding-top: 30px;
+        margin-bottom: 30px;
+      }
+     
+      .rank {
+        font-size: 32px;
+      }
+      .star {
+        color: #ffb80f;
+      }
+    }
+    .right-lower-card {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      button {
+        @include sm {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .choice {
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff7724;
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+    gap: 5px;
+    @include sm {
+      padding: 5px;
+    }
+  }
+  .number {
+    position: absolute;
+    top: 20%;
+    left: -20px;
+    color: #626e79;
+    font-size: 20px;
+    border: 1px solid #e1e4e6;
+    padding: 10px 17px;
+    border-radius: 100%;
+    @include sm {
+      top: 5%;
+      left: 5px;
+    }
+    @include lg{
+      left: 1%;
+    };
+  }
+}

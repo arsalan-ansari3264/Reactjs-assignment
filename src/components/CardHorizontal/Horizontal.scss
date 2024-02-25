@@ -1,0 +1,36 @@
+@import "../../css-config/mixins.scss";
+
+.horizontal {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  h2 {
+    color: #2c384a;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    @include sm {
+      padding: 10px;
+    }
+  }
+}
+
+.horizontal-container {
+  display: flex;
+  max-width: 1024px;
+  margin: 35px auto;
+  gap: 22px;
+  align-items: center;
+  justify-content: center;
+  @include sm {
+    // flex-direction: column;
+  }
+  @include lg {
+    flex-wrap: wrap;
+  }
+}

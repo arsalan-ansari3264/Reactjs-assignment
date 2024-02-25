@@ -1,0 +1,55 @@
+@import "../../css-config/mixins.scss";
+
+footer {
+  width: 100%;
+  height: 452px;
+  background-color: #212731;
+  color: white;
+  @include sm{
+    height: 350px;
+  };
+  @include lg{
+    padding: 0 40px;
+  };
+  .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 13px;
+    padding-top: 40px;
+    @include sm{
+      padding-top: 20px;
+      padding-left: 20px
+    };
+    
+    .cat {
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+    p{  
+        margin-top: 30px;
+        color: #B6BDC4;
+    }
+    .state{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 16px;
+        padding-right: 160px;
+        // background-color: red;
+        @include sm{
+            padding-right: 0
+        };
+        @include lg{
+          padding-right: 0;
+        };
+    span{
+        padding-top: 30px;
+        color: #B6BDC4;
+    }
+    }
+  }
+ 
+}

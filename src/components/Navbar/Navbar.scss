@@ -1,0 +1,58 @@
+@import "../../css-config/mixins.scss";
+
+
+nav {
+  width: 100%;
+  height: 64px;
+  background-color: #212731;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  @include sm{
+    gap: 10px
+  };
+  .search {
+    display: flex;
+    align-items: center;
+    width: 258px;
+    height: 37px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    overflow: hidden;
+    @include sm{
+      width: 100px;
+    };
+    label {
+      font-size: 22px;
+      padding-left: 6px;
+      padding-top: 5px;
+    }
+    input {
+      border: none;
+      outline: none;
+      height: 100%;
+      width: 100%;
+      font-size: 13px;
+      padding-left: 8px;
+    }
+  }
+  .navlinks {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @include sm{
+      gap: 8px;
+    };
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      color: #D1D6DA;
+      @include sm;
+      font-size: 12px;
+    }
+  }
+}   

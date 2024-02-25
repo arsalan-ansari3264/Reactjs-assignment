@@ -1,0 +1,55 @@
+.card-horizontal {
+  height: 425px;
+  width: 333px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding-left: 20px;
+  .img img {
+    padding: 37px 96px;
+  }
+  .offer {
+    display: flex;
+    gap: 4px;
+
+    p {
+      background-color: #f2f4f7;
+      color: #074786;
+      font-size: 13px;
+      border-radius: 8px;
+      padding: 8px;
+    }
+  }
+  .naming {
+    padding-left: 87px;
+    h2 {
+      color: #626e79;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  }
+  .description {
+    color: #626e79;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 29px 8px 0px;
+  }
+  .det {
+    display: flex;
+    gap: 10px;
+    .price {
+      font-size: 20px;
+      color: #5c6874;
+    }
+    .hlt-price {
+      color: #9fa9b3;
+      margin-top:5px;
+    }
+    .off {
+      color: #ef4c5d;
+      margin-top: 5px;
+    }
+  }
+  .deal-btn{
+    padding-top: 12px;
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../css-config/mixins.scss";
+
+
+.newsletter {
+  max-width: 1024px;
+  margin: 40px   auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  @include sm{
+    width: 100%;
+    flex-direction: column;
+    padding:  0 20px;
+    margin-top: 20px;
+
+  };
+  h2 {
+    color: #5c6874;
+    width: 398px;
+    height: 88px;
+    font-weight: 400;
+    font-size: 32px;
+    @include sm{
+      padding-left: 10px;
+      font-size: 22px;
+      width: 100%;
+    };
+  }
+  .searchComponent {
+    width: 348px;
+    height: 52px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 12px 0 0 12px;
+    input {
+      height: 100%;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: #ffffff;
+      padding-left: 15px;
+      font-size: 14px;
+    }
+    button {
+      height: 52px;
+      width: 180px;
+      border-radius: 0 12px 12px 0px;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      color: #fff;
+      background-color: #1b88f4;
+    }
+  }
+}
